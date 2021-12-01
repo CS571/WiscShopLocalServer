@@ -21,7 +21,7 @@ sudo docker build . -f Dockerfile -t wisc/cs571/fa21/wiscshop
 ```
 4. Run the built image in a Docker container:
 ```sh
-sudo docker run --restart=always -p 5000:5000 -t wisc/cs571/fa21/wiscshop:latest
+sudo docker run --restart=always -p 5000:5000 wisc/cs571/fa21/wiscshop:latest
 ```
 5. The API endpoint should be accessible at `http://localhost:5000`.
 
