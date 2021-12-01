@@ -8,6 +8,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '12345'
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cs639.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cs571.db'
 app.url_map.strict_slashes = False
 CORS(app)

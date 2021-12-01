@@ -1,6 +1,6 @@
 # Shopping API
 
-The following API can be accessed at `https://mysqlcs639.cs.wisc.edu`
+The following API can be accessed at `http://cs571.cs.wisc.edu:5000`
 
 | Endpoint                                       | Auth Required | Token Required | Get | Post | Put | Delete |
 |------------------------------------------------|---------------|----------------|-----|------|-----|--------|
