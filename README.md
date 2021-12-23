@@ -1,5 +1,5 @@
-# WiscShopLocalServer
-A local endpoint for the WiscShop server provided as an alternative to the endpoint available at `http://cs571.cs.wisc.edu:5000`
+# CS571 API Web Server
+A local API server for CS571 projects provided as an alternative to the endpoint available at `https://cs571.cs.wisc.edu`
 
 ## About
 - We have elected to provide the option to fetch from a local instance of the endpoint, because a Dialogflow intent has an inflexible timeout deadline of 5 seconds, and some students may not have a 5 second latency to our online endpoint. 
