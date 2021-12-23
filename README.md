@@ -1,9 +1,5 @@
 # CS571 API Web Server
-A local API server for CS571 projects provided as an alternative to the endpoint available at `https://cs571.cs.wisc.edu`
-
-## About
-- We have elected to provide the option to fetch from a local instance of the endpoint, because a Dialogflow intent has an inflexible timeout deadline of 5 seconds, and some students may not have a 5 second latency to our online endpoint. 
-- Use the local endpoint _only if you are experiencing a long latency_ between your webhook and our online API endpoint at `http://cs571.cs.wisc.edu:5000`.
+A docker container for CS571 API server, provided as an alternative to the endpoint available at `https://cs571.cs.wisc.edu`
 
 ## Prerequisite
 1. Install Docker by following the install guide for your operating system
