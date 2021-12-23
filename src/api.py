@@ -16,6 +16,7 @@ from tables import *
 from activities import *
 from applications import *
 from categories import *
+from classes import *
 from database import db
 from foodarchetypes import *
 from foods import *
@@ -40,26 +41,6 @@ def delete_empty_string_user():
         db.session.delete(user)
     db.session.commit()
 
-try:
-    with open('class_data.json','r') as filedata:
-            CLASS_DATA = json.load(filedata)
-    with open('card_data.json','r') as filedata:
-            CARD_DATA = json.load(filedata)
-    with open('class_data_previous.json','r') as filedata:
-            PREVIOUS_CLASS_DATA = json.load(filedata)
-except Exception as e:
-    print('Error loading json data: '+str(e))
-    CLASS_DATA = {}
-    CARD_DATA = {}
-    PREVIOUS_CLASS_DATA = {}
-
-@app.route('/students/5022025924/classes/completed/',methods=['GET'])
-def get_completed():
-    return create_response(PREVIOUS_CLASS_DATA,200,origin='*')
-
-@app.route('/classes/',methods=['GET'])
-def get_classes():
-    return create_response(CLASS_DATA,200,'*')
 
 @app.route('/cards/',methods=['GET'])
 def get_cards():
