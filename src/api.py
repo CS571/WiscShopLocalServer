@@ -22,6 +22,7 @@ from foods import *
 from meals import *
 from messages import *
 from models import *
+from orders import *
 from products import *
 from reviews import *
 from tables import *
